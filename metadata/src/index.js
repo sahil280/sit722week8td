@@ -30,6 +30,7 @@ async function startMicroservice(dbHost, dbName, rabbitHost, port) {
     //
     // HTTP GET route to retreive details for a particular video.
     //
+    //
     app.get("/video", async (req, res) => {
         const videoId = new mongodb.ObjectId(req.query.id);
         const video = await videosCollection.findOne({ _id: videoId }) // Returns a promise so we can await the result in the test.

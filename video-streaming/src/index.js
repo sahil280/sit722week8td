@@ -26,6 +26,7 @@ async function main() {
     //
     // Broadcasts the "viewed" message to other microservices.
     //
+    //
     function broadcastViewedMessage(messageChannel, videoId) {
         console.log(`Publishing message on "viewed" exchange.`);
             

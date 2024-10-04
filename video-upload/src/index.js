@@ -28,6 +28,7 @@ async function main() {
     //
     // Broadcasts the "video-uploaded" message.
     //
+    //
     function broadcastVideoUploadedMessage(videoMetadata) {
         console.log(`Publishing message on "video-uploaded" exchange.`);
             
